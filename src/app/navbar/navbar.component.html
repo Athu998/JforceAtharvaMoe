@@ -1,0 +1,43 @@
+<nav class="navbar">
+
+    <div class="logo">
+        Event Management
+    </div>
+
+    <div class="nav-links">
+
+        @if (authService.isAdmin()) {
+
+            <a routerLink="/add-event">
+                Add Event
+            </a>
+
+            <a routerLink="/events">
+                View Events
+            </a>
+
+            <a routerLink="/admin-bookings">
+                Event Bookings
+            </a>
+
+        }
+
+        @if (!authService.isAdmin()) {
+
+            <a routerLink="/events">
+                View Events
+            </a>
+
+        }
+
+        <button
+            class="logout-btn"
+            (click)="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</nav>

@@ -1,0 +1,98 @@
+<h1>Available Events</h1>
+
+<p>{{ message }}</p>
+
+<div *ngFor="let event of events">
+
+    <h2>{{ event.event_name }}</h2>
+
+    <p>
+        Date: {{ event.event_date }}
+    </p>
+
+    <p>
+        Location: {{ event.event_location }}
+    </p>
+
+    <p>
+        {{ event.event_description }}
+    </p>
+
+    <button
+        (click)="bookEvent(event.id)"
+    >
+        Book Event
+    </button>
+
+</div>
+
+
+<hr>
+
+
+<h2>My Booked Events</h2>
+
+<div *ngFor="let booking of bookings">
+
+    <h3>
+        {{ booking.event_name }}
+    </h3>
+
+    <p>
+        Date: {{ booking.event_date }}
+    </p>
+
+    <p>
+        Location: {{ booking.event_location }}
+    </p>
+
+</div>
+<h1>Available Events</h1>
+
+<p>{{ message }}</p>
+
+<div *ngFor="let event of events">
+
+    <h2>{{ event.event_name }}</h2>
+
+    <p>
+        Date: {{ event.event_date }}
+    </p>
+
+    <p>
+        Location: {{ event.event_location }}
+    </p>
+
+    <p>
+        {{ event.event_description }}
+    </p>
+
+    <button
+        (click)="bookEvent(event.id)"
+    >
+        Book Event
+    </button>
+
+</div>
+
+
+<hr>
+
+
+<h2>My Booked Events</h2>
+
+<div *ngFor="let booking of bookings">
+
+    <h3>
+        {{ booking.event_name }}
+    </h3>
+
+    <p>
+        Date: {{ booking.event_date }}
+    </p>
+
+    <p>
+        Location: {{ booking.event_location }}
+    </p>
+
+</div>

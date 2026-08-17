@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+}
+
+
+/* Common container */
+
+.container {
+    width: 400px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+/* Headings */
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+/* Forms */
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+}
+
+
+/* Common button */
+
+button {
+    padding: 10px;
+
+    background-color: #007bff;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Messages */
+
+.message {
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+
+/* Event */
+
+.event {
+    background-color: white;
+
+    padding: 20px;
+
+    margin: 15px auto;
+
+    width: 90%;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+
+/* Event button */
+
+.event button {
+    width: 100%;
+}
+
+
+/* Booking */
+
+.booking {
+    background-color: white;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+.page {
+    padding: 20px;
+}

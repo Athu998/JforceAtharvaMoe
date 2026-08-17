@@ -1,0 +1,61 @@
+<div class="page">
+
+    <h1>Event Registrations</h1>
+
+    <p class="message">
+        {{ message }}
+    </p>
+
+
+    <div *ngIf="bookings.length === 0">
+
+        <p>
+            No bookings found.
+        </p>
+
+    </div>
+
+
+    <div
+        class="booking"
+        *ngFor="let booking of bookings"
+    >
+
+        <h2>
+            {{ booking.event_name }}
+        </h2>
+
+        <p>
+            <strong>Event Date:</strong>
+            {{ booking.event_date }}
+        </p>
+
+        <p>
+            <strong>Location:</strong>
+            {{ booking.event_location }}
+        </p>
+
+        <hr>
+
+        <h3>
+            Registered User
+        </h3>
+
+        <p>
+            <strong>Name:</strong>
+            {{ booking.user_name }}
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            {{ booking.user_email }}
+        </p>
+
+        <p>
+            <strong>Booking Date:</strong>
+            {{ booking.booking_date }}
+        </p>
+
+    </div>
+
+</div>
